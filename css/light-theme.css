@@ -1,0 +1,13 @@
+:root {
+	 --main-color: #e1e1e1 /*#E8E4E3 #E8EBED #EBF3FF*/;
+	--text-color: #68768A;
+	--placeholder-color: #A0ACBD;
+	--contrast-color: #FF8A00;
+	--dark-shadow-color: #0000004b /*#B4C1D5*/;
+	--light-shadow-color:/*#faf9f8*/ #F8F6F4 /*#FFFFFF*/;
+	--dark-shadow-color-hidden: #B4C1D500;
+	--light-shadow-color-hidden: #FFFFFF00;
+	--ratio: calc(1vh + 1vw);
+	--border: #D7D1CF;
+	--border-light: #D7D1CF99;
+}
