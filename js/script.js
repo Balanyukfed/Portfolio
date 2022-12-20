@@ -37,7 +37,7 @@ themeBtn.onclick = function() {
 
 		for(let i = 0; i<imgSocial.length; i++){
 			imgSocial[i].src=`img/social/social_img${i+1}${i+1}.png`;
-			console.log(i);
+			// console.log(i);
 		}
 	}
 	else {
@@ -62,7 +62,7 @@ themeBtn.onclick = function() {
 		
 		for(let i = 0; i<imgSocial.length; i++){
 			imgSocial[i].src=`img/social/social_img${i+1}.png`;
-			console.log(i);
+			// console.log(i);
 		}
 	}
 
@@ -224,21 +224,9 @@ function trackScroll() {
 }
 
 //============================================
-let portfolio = document.querySelector('.portf_frame');
-
-if(window.screen.height<768 || window.screen.width<1366){
-	let logoSize = document.querySelector('.logo_shadow');
-
-	logoSize.style.cssText = `Transform: scale(${window.screen.height / 1080 + 0.1})`;
-	portfolio.style.cssText = `Transform: skew(-22deg,12deg) scale(${window.screen.width / 1920 })`;
-}
-
-if(window.screen.width<=480){
 	let logoSize = document.querySelector('.logo_shadow');
 
 	logoSize.style.cssText = `Transform: scale(${window.screen.width / 1920 + 0.2})`;
-	portfolio.style.cssText = `Transform: skew(-22deg,12deg) scale(${(window.screen.width / 1920) + 0.2})`;
-}
 
 //=====================================================
 let buttonHeader = document.querySelector('.button_header');

@@ -69,12 +69,12 @@ html, body{
 	::-webkit-scrollbar {
 		width: 15px;
 		background-color: var(--main-color);
-		transition: all 0.6s ease;
+		transition: background-color 0.6s ease;
 	}
 	::-webkit-scrollbar-thumb {
 		border-radius: 5px;
 		background-color: var(--contrast-color);
-		transition: all 0.6s ease;
+		transition: background-color 0.6s ease;
 	}
 	::-webkit-scrollbar-track {
 		box-shadow: inset -3px -3px 6px var(--light-shadow-color), inset 3px 3px 6px var(--dark-shadow-color);
@@ -113,7 +113,7 @@ header .container{
 }
 @keyframes logoSwap{
 	to{
-		transform: translateX(60%);
+		transform: translateX(20vw);
 		transition: transform 1s ease;
 	}
 }
@@ -412,7 +412,7 @@ nav{
 	@media (max-width: 480px){
 	@keyframes logoSwap{
 		to{
-			transform: translateX(0%) translateY(-260px) scale(0.5);
+			transform: translateX(0%) translateY(-30vh) scale(0.6);
 			transition: transform 2s ease;
 			opacity: 0.8;
 		}	
@@ -674,11 +674,10 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 			height: fit-content;
 		}
 		.for_adopt{
-			margin-top: -20px;
 			display: flex;
 			flex-direction: column;
 			width: 80%;
-			margin: 0 auto;
+			margin: 20px auto 0;
 			align-items: center;
 		}
 		.card{
@@ -688,8 +687,8 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 			width: fit-content;
 		}
 		.skills.card{
-
-			transform: translateX(0);
+			transform: translate(0);
+			position: static;
 		}
 		.solid_vert,.solid_hor{
 			display: none;
@@ -705,14 +704,15 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 	}
 	@media (max-width: 480px){
 		.aboutMe{
+			margin-top: 0px;
 			height: fit-content;
 		}
 		.word{
 			transform: scale(0.5);
 			margin-left: -120px;
+			margin-top: 0px;
 		}
 		.for_adopt{
-			margin-top: -20px;
 			display: flex;
 			flex-direction: column;
 			width: 80%;
@@ -725,6 +725,8 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 		}
 		.skills.card{
 			transform: translateX(0);
+			top: 0;
+			left: auto;
 		}
 		.solid_vert,.solid_hor, .me{
 			display: none;
@@ -732,6 +734,7 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 		.photo{
 			width: 180px;
 			height: 180px;
+			margin-bottom: 20px;
 		}
 		.card{
 			height: fit-content;
@@ -1047,9 +1050,9 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 			padding: 0 0 10px 0;
 			background: #9400D8;
 		}
-		.title{
+		/* .title{
 			margin-top: 0;
-		}
+		} */
 		.window_quality{
 			top: -30px;
 		}
