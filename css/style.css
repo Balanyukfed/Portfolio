@@ -1294,7 +1294,7 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 	justify-content: start;
 	position: relative;
 	background: var(--main-color);
-	box-shadow: inset -8px -8px 20px var(--light-shadow-color), inset 8px 8px 20px var(--dark-shadow-color), inset 20px 20px 50px var(--contrast-color);
+	box-shadow: inset -8px -8px 20px var(--light-shadow-color), inset 8px 8px 20px var(--dark-shadow-color);
 }
 .social__block:nth-child(2n){
 	justify-content: end;
