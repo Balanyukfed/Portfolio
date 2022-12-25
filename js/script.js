@@ -36,7 +36,7 @@ themeBtn.onclick = function() {
 		themeBtn.classList.toggle('icon_moon');
 
 		for(let i = 0; i<imgSocial.length; i++){
-			imgSocial[i].src=`img/social/social_img${i+1}${i+1}.png`;
+			imgSocial[i].src=`img/social/img${i+1}${i+1}.png`;
 			// console.log(i);
 		}
 	}
