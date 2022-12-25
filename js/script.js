@@ -30,10 +30,11 @@ themeBtn.onclick = function() {
 		qualitiesImgCircle.forEach((circle) => {
 			circle.setAttribute('stroke','#D0D0D2');
 		})
+		themeBtn.classList.remove('icon_sun');
+		themeBtn.classList.add('icon_moon');
 		
-
-		themeBtn.classList.toggle('icon_sun');
-		themeBtn.classList.toggle('icon_moon');
+		// themeBtn.classList.toggle('icon_sun');
+		// themeBtn.classList.toggle('icon_moon');
 
 		for(let i = 0; i<imgSocial.length; i++){
 			imgSocial[i].src=`img/social/img${i+1}${i+1}.png`;
@@ -57,11 +58,13 @@ themeBtn.onclick = function() {
 			circle.setAttribute('stroke','#68768A');
 		})
 
-		themeBtn.classList.toggle('icon_moon');
-		themeBtn.classList.toggle('icon_sun');
+		themeBtn.classList.add('icon_sun');
+		themeBtn.classList.remove('icon_moon');
+		// themeBtn.classList.toggle('icon_moon');
+		// themeBtn.classList.toggle('icon_sun');
 		
 		for(let i = 0; i<imgSocial.length; i++){
-			imgSocial[i].src=`img/social/social_img${i+1}.png`;
+			imgSocial[i].src=`img/social/img${i+1}.png`;
 			// console.log(i);
 		}
 	}
@@ -180,10 +183,10 @@ function trackScroll() {
 
 	qualities.forEach((quality)=>{
 		if(scrolled > offset(quality)){
-			quality.style.cssText = "animation: qualities 2s ease 0.3s forwards;";
+			quality.style.cssText = "animation: qualities 2s ease 0.5s forwards;";
 		}
 	})
-
+	
 	qualityImg.forEach((img) => {
 		if(scrolled > offset(img)){
 			img.style.cssText = "opacity: 1;";

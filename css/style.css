@@ -899,12 +899,6 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 		text-align: center;
 	}
 
-	/* @keyframes quality__visible {
-		to{
-			visibility: visible;
-		}
-	} */
-
 	@keyframes qualities{
 		0%{
 			stroke-dashoffset: 700;
@@ -914,214 +908,6 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 		}
 	}
 	
-	/* .quality{
-		margin-top: 130px;
-		width: 33.33%;
-		position: relative;
-	}
-	.quality:nth-child(2){	
-		animation: animate_way 40s linear infinite;
-	}
-	.quality:nth-child(3){	
-		animation: animate_way 40s linear -10s infinite;
-	}
-	.quality:nth-child(4){	
-		animation: animate_way 40s linear -23s infinite;
-	}
-	@keyframes animate_way{
-		0%{
-			transform: translate(0px, 0px);
-		}
-		25%{
-			transform: translate(10px, 130px);
-		}
-		50%{
-			transform: translate(0px, 260px);
-		}
-		75%{
-			transform: translate(-10px, 120px);
-		}
-		100%{
-			transform: translate(0px, 0px);
-		}
-	}
-	.window_quality:hover .quality:nth-child(2){
-		animation: paused;
-	}
-	.window_quality{
-		cursor: pointer;
-		position: relative;
-		margin: 0 auto;
-		width: 122px;
-		height: 122px;
-		border-radius: 50%;
-		border: 5px solid #9400D8;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: 2s;
-		z-index: 3;
-		background: #150a1c;
-	}
-	.window_quality.first img{
-		display: block;
-		position: absolute;
-		bottom: 13px;
-		left: 13px;
-	}
-	.window_quality.second img{
-		display: block;
-		position: absolute;
-		bottom: 15px;
-	}
-	.window_quality::before,
-	.window_quality::after{
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: '';
-		display: block;
-		border-radius: 50%;
-		width: 100%;
-		height: 100%;
-		border: 1px solid #9400D8;
-		transition: 2s ease;
-		animation: ring1_anim 3s ease 1s infinite;
-		opacity: 1;
-		transform: scale(1.06);
-	}
-	.window_quality::after{
-		animation: ring1_anim 3s ease 2s infinite;	
-	}
-	.window_quality:hover::before{
-		animation: none;
-		transform: scale(1.05);
-	}
-	.window_quality:hover::after{
-		animation: none;
-		transform: scale(1.05);
-	}
-	@keyframes ring1_anim{
-		to{
-			transform: scale(1.8);
-			opacity: 0;
-			transition: 1s;
-		}
-	}
-	.ring_block{
-		max-width: 289px;
-		height: 337px;
-		
-		background-image: url('../img/quality1.svg');
-		border-radius: 20px;
-		position: relative;
-		top: -95px;
-		left: 50%;
-		transform: translate(-50%,-50%) scale(0);
-		opacity: 0;
-		transition: 1s ease 0.2s;
-
-	}
-	.window_quality:hover~.ring_block{
-		transform: translate(-50%,0) scale(1.0);
-		transition: 1s ease;
-		opacity: 1;
-	}
-	.ring_block .title{
-		position: relative;
-		top: 90px;
-		font-size: 28px;
-	}
-	.ring_block .subtitle{
-		margin: 110px 21px 45px 21px;
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 24px;
-		text-align: center;
-	} */
-	@media (min-width: 481px) and (max-width: 900px){
-		.ring_block{
-			background-image: url();
-			background: #9400D8;
-			/* height: 300px; */
-			/* background-size: 100%; */
-			height: fit-content;
-			/* width: 100%; */
-			padding: 0 0 10px 0;
-			background: #9400D8;
-		}
-		/* .title{
-			margin-top: 0;
-		} */
-		.window_quality{
-			top: -30px;
-		}
-	}
-	@media (max-width: 480px){
-		.qualities{
-			flex-direction: column;
-			align-items: center;
-			height: 900px;
-		}
-		.qualities span{
-			font-size: 32px;
-		}
-		.window_quality{
-			transform: scale(0.6);
-		}
-		.quality{
-			margin-top: 190px;
-			height: 60px;
-			width: fit-content;
-		}
-		.quality:nth-child(2){
-			margin-top: 300px;
-			height: 60px;
-			width: fit-content;
-			margin-top: 225px;
-		}
-		@keyframes animate_way {
-			0%{
-				transform: translate(-20%,0);
-			}
-			50%{
-				transform: translate(20%,0);
-			}
-			100%{
-				transform: translate(-20%,0);
-			}
-		}
-	/*.window_quality:hover~.ring_block {
-    transform: translate(-50%,0) scale(0.6);
-    }*/
-    .window_quality{
-    	top: -100px;
-    }	
-    .ring_block{
-    	background-image: url("../img/quality_rotate.svg");
-    	width: 350px;
-    	max-width: 350px;
-    	background-repeat: no-repeat;
-    	background-size: 100% 100%;
-    	top: -264px;
-    	left: 50%;
-    	transform: translate(-50%,0) scale(0.6);
-    	opacity: 1;
-    	background: #9400D8;
-    }
-    .ring_block .title {
-    	position: relative;
-    	top: 80px;
-    }
-    .ring_block .subtitle {
-    	margin: 100px 21px 45px 21px;
-    	text-align: center;
-    	font-size: 24px;
-    }
-    .window_quality:hover~.ring_block{
-    	transform: translate(-50%,0) scale(0.6);
-    }
-}
 /*===============================================================*/
 
 /*==========================Portfolio============================*/
@@ -1298,6 +1084,7 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 	position: relative;
 	background: var(--main-color);
 	box-shadow: inset -8px -8px 20px var(--light-shadow-color), inset 8px 8px 20px var(--dark-shadow-color);
+	cursor: auto;
 }
 .social__block:nth-child(2n){
 	justify-content: end;
@@ -1314,6 +1101,7 @@ text-shadow: -4px -4px 8px var(--light-shadow-color), 4px 4px 8px var(--dark-sha
 }
 .social__img_hover:hover{
 	box-shadow: -5px -5px 14px var(--light-shadow-color), 7px 7px 10px var(--dark-shadow-color);
+	cursor: pointer;
 }
 .social__img{
 	position: relative;
