@@ -32,14 +32,18 @@
   content: "\e900";
   color: var(--text-color);
   font-size: 160px;
+  /* font-size: calc(8 * var(--ratio)); */
 }
 .portf__card.portf_portf2:before {
   content: "\e901";
   color: var(--text-color);
    font-size: 100px;
+   left: 20px;
+   /* font-size: calc(5 * var(--ratio)); */
 }
 .portf__card.portf_portf3:before {
   content: "\e902";
   color: var(--text-color);
    font-size: 100px;
+   /* font-size: calc(5 * var(--ratio)); */
 }

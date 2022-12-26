@@ -101,6 +101,17 @@ window.addEventListener('scroll', function () {
 // 	}
 // })
 
+// window.addEventListener('scroll', function(){
+// 	if (window.scrollY < window.screen.height){
+// 		console.log('1');
+// 		window.scrollTo({
+// 			top: window.screen.height,
+// 			left: 0,
+// 			behavior : "smooth"
+// 		});
+// 	}
+// })
+
 //==================Создание анимации параллакса======================
 window.onload = function(){ 
 	let figure = document.querySelectorAll('.figure');
@@ -160,6 +171,7 @@ let infoCard = Array.from(document.querySelectorAll('.for_adopt .card'));
 
 let word = document.querySelectorAll('.word');
 let arrayWords = Array.from(word);
+let portfImg = document.querySelector('.photo');
 let portfBlock = Array.from(document.querySelectorAll('.portf__block'));
 let portfCard = Array.from(document.querySelectorAll('.portf__card'));
 let socialBlock = Array.from(document.querySelectorAll('.social__block'));
@@ -212,6 +224,9 @@ function trackScroll() {
 	})
 
 	//Анимация появления блоков Портфолио
+	if(scrolled > offset(portfImg)){
+		portfImg.style.cssText = "box-shadow: -5px -5px 23px var(--light-shadow-color),	10px 10px 20px var(--dark-shadow-color);; opacity: 1";
+	}
 	portfBlock.forEach((block)=>{
 		if(scrolled > offset(block)){
 			block.style.cssText = "opacity: 1";
@@ -236,7 +251,7 @@ function trackScroll() {
 //============================================
 	let logoSize = document.querySelector('.logo_shadow');
 
-	logoSize.style.cssText = `Transform: scale(${window.screen.width / 1920 + 0.2})`;
+	logoSize.style.cssText = `Transform: scale(${window.innerWidth / 1920 + 0.3})`;
 
 //=====================================================
 let buttonHeader = document.querySelector('.button_header');
