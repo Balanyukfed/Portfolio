@@ -93,6 +93,13 @@ window.addEventListener('scroll', function () {
 		navigation.classList.remove('nav_active');
 	}
 });
+// window.addEventListener('scroll', function (){
+// 	let scrollForY = window.innerHeight;
+// 	// alert (scrollForY);
+// 	if (window.scrollY > 0 && window.scrollY < window.innerHeight){
+// 		window.scrollTo(0,scrollForY);
+// 	}
+// })
 
 //==================Создание анимации параллакса======================
 window.onload = function(){ 
