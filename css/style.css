@@ -1106,11 +1106,11 @@ footer .container{
 	width: 100%;
 	}
 	.portf__card.portf_portf1:before{
-		font-size: calc(9 * var(--ratio));
+		font-size: calc(9 * var(--ratio)) !important;
 	}
 	.portf__card.portf_portf2:before,
 	.portf__card.portf_portf3:before{
-		font-size: calc(6 * var(--ratio));
+		font-size: calc(6 * var(--ratio)) !important;
 	}
 }
 
