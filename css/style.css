@@ -661,6 +661,7 @@ nav{
 		}
 		.about_list {
 			flex-direction: column;
+			gap: 0;
 		}
 		.skills ul:first-child {
 			margin-bottom: 14px;
@@ -879,6 +880,15 @@ nav{
 .portf__block:nth-child(6) .portf__card::after{
 	background: url("../img/portfolio/img6.jpeg");
 	background-size: cover;
+}
+.portf__block:nth-child(7) .portf__card::after{
+	background: url("../img/portfolio/img7.jpeg");
+	background-size: cover;
+}
+.portf__block:nth-child(8) .portf__card::after{
+	background: url("../img/portfolio/img8.jpeg");
+	background-size: 220%;
+	background-position: center;
 }
 
 .portf__card:hover::before {
@@ -1162,6 +1172,7 @@ footer .container{
 	}
 	.effects__desc{
 	width: 100%;
+	padding: 0;
 	}
 	.portf__card.portf_portf1:before{
 		font-size: calc(9 * var(--ratio)) !important;
@@ -1174,6 +1185,9 @@ footer .container{
 
 
 @media (max-width: 600px){
+	.portf__card::before{
+		display: none;
+	}
 	.qualities__blocks{
 		padding: 0px 3vw;
 		height: 100%;
@@ -1216,10 +1230,40 @@ footer .container{
 	.qualities__subtitle{
 		display: none;
 	}
+	.effects__card{
+		visibility: hidden;
+	}
 	
 }
 
 @media (max-width: 480px){
+	.title{
+		margin-top: 0;
+	}
+	.qualities .title{
+		margin-top: 35px;
+		margin-bottom: 0;
+	}
+	.qualities__blocks{
+		margin-top: 20px;
+	}
+	.portf__frame{
+		margin-top: 20px;
+	}
+	.portf__block{
+		gap: 20px;
+	}
+	.subtitle{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.effects__block{
+		padding: 10px 20px;
+		margin-top: 20px;
+	}
+	.effects__desc{
+		gap: 20px;
+	}
 	@keyframes logoSwap{
 		to{
 			transform: translateX(0%) translateY(-30vh) scale(0.6);

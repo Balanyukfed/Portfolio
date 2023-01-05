@@ -1,6 +1,6 @@
 :root {
 	--main-color: #e1e1e1 /*#E8E4E3 #E8EBED #EBF3FF*/;
-	--text-color: #68768A;
+	--text-color: rgb(104, 118, 138);
 	--placeholder-color: #A0ACBD;
 	--contrast-color: #FF8A00;
 	--dark-shadow-color: #0000004b /*#B4C1D5*/;
