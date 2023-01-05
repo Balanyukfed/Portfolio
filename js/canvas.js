@@ -1,4 +1,12 @@
+var color1 = getComputedStyle(document.documentElement).
+getPropertyValue('--text-color');
+var color2 = getComputedStyle(document.documentElement).
+getPropertyValue('--placeholder-color');
+var color3 = getComputedStyle(document.documentElement).
+getPropertyValue('--main-color');
+
 (() => {
+
     const cnv = document.querySelector('canvas');
     const ctx = cnv.getContext('2d');
     
@@ -8,9 +16,10 @@
     }
     init();
     
-    const numberOfRings = 1;
-    const ringRadiusOffset = 8;
-    const colors = ['darkred', 'red', 'tomato'];
+    const numberOfRings = 3;
+    const ringRadiusOffset = 20;
+    // const colors = ['#68768A', '#A0ACBD', '#e1e1e1'];
+    const colors = [color1, color2, color3];
     const waveOffset = 15;
     let startAngel = 0;
     
@@ -33,8 +42,8 @@
     
     function drawRing(radius,color, offsetAngle){
     ctx.strokeStyle = color;
-    ctx.lineWidth = 20;
-    ctx.shadowColor = "#0000004b", "red";
+    ctx.lineWidth = 23;
+    ctx.shadowColor = "#0000004b";
     ctx.shadowBlur = 10;
     ctx.shadowOffsetX = 5;
     ctx.shadowOffsetY = 5;

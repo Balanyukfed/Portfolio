@@ -32,13 +32,9 @@ themeBtn.onclick = function() {
 		})
 		themeBtn.classList.remove('icon_sun');
 		themeBtn.classList.add('icon_moon');
-		
-		// themeBtn.classList.toggle('icon_sun');
-		// themeBtn.classList.toggle('icon_moon');
 
 		for(let i = 0; i<imgSocial.length; i++){
 			imgSocial[i].src=`img/social/img${i+1}${i+1}.png`;
-			// console.log(i);
 		}
 	}
 	else {
@@ -60,17 +56,13 @@ themeBtn.onclick = function() {
 
 		themeBtn.classList.add('icon_sun');
 		themeBtn.classList.remove('icon_moon');
-		// themeBtn.classList.toggle('icon_moon');
-		// themeBtn.classList.toggle('icon_sun');
-		
+
 		for(let i = 0; i<imgSocial.length; i++){
 			imgSocial[i].src=`img/social/img${i+1}.png`;
-			// console.log(i);
 		}
 	}
 
 }
-
 
 //=======================Скрытие Header при скроле====================
 let header = document.querySelector('header');
@@ -121,9 +113,6 @@ function setMouseParallax(){
 //Перемещение массива фигур с учетом массива коэффициентов
 for(i = 0; i < figure.length; i++){
 	figure[i].style.cssText = `Transform: translate(${positionX*arrayForMove[i]}%,${positionY*arrayForMove[i]}%) rotate(${rotate/150*arrayForMove[i]}deg);`;
-	// if(document.querySelector('body').offsetWidth < 800){
-	// 	figure[i].style.cssText = `Transform: translate(${positionX*arrayForMove[i]}%,${positionY*arrayForMove[i]}%) rotate(${rotate/150*arrayForMove[i]}deg) scale(0.5);`;
-	// }
 }
 requestAnimationFrame(setMouseParallax);
 }
@@ -146,7 +135,7 @@ header.addEventListener('mousemove', function(e){
 let footerData = document.getElementById('footer_data');
 let data = new Date().getFullYear();
 
-footerData.innerHTML = `Баланюк Никита, ${data}`;
+footerData.innerHTML = `Баланюк Никита, 2022-${data}`;
 
 /*=====================Анимация svg при скролле =======================*/
 let infoCard = Array.from(document.querySelectorAll('.for_adopt .card'));
@@ -281,4 +270,3 @@ function scrollThird(){
 window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
 }
-
